@@ -20,7 +20,16 @@ A simple Python tool to scan a local IP range and identify devices that are aliv
 
 ```
 
-network_scanner/ ├── scanner.py # Core scanning logic ├── run.py # CLI script to launch scan ├── utils.py # IP range generator + result logger ├── test_scanner.py # Unit tests ├── dashboard/ │ ├── app.py # Flask dashboard app │ └── templates/ │ └── index.html # UI for scanner dashboard └── README.md # You're reading it!
+network_scanner/
+├── scanner.py              # Core scanning logic using sockets
+├── run.py                  # CLI script to launch scan
+├── utils.py                # IP utilities and logging
+├── test_scanner.py         # Unit tests
+├── dashboard/
+│   ├── app.py              # Flask web app
+│   ├── templates/
+│   │   └── index.html      # Dashboard UI
+└── README.md               # Documentation
 
 ````
 
