@@ -1,21 +1,21 @@
 ````markdown
-# 🔍 Local Network Device Scanner (Python TCP/IP)
+#  Local Network Device Scanner (Python TCP/IP)
 
 A simple Python tool to scan a local IP range and identify devices that are alive by attempting TCP connections (default: port 80). Designed with OOP principles, socket programming, and unit testing support. Includes a Flask-based web dashboard for live monitoring.
 
 ---
 
-## ✅ Features
+##  Features
 
-- 🔌 **TCP/IP Socket Scanning** using `socket.create_connection()`
-- 🧠 **Object-Oriented Design** (`Scanner`, `ScanResult`)
-- 🧪 **Unit Testing** with `unittest`
-- 📊 **Real-time Flask Dashboard**
-- 📦 Easily extendable for port scanning, CSV export, authentication
+-  **TCP/IP Socket Scanning** using `socket.create_connection()`
+-  **Object-Oriented Design** (`Scanner`, `ScanResult`)
+-  **Unit Testing** with `unittest`
+-  **Real-time Flask Dashboard**
+-  Easily extendable for port scanning, CSV export, authentication
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```bash
 network_scanner/
@@ -32,16 +32,16 @@ network_scanner/
 
 ---
 
-## 🛠 Requirements
+##  Requirements
 
 * Python 3.6+
 * Flask (`pip install flask`)
 
 ---
 
-## 🚀 Usage
+##  Usage
 
-### 1️⃣ Clone the Repository
+###  Clone the Repository
 
 ```bash
 git clone https://github.com/kartik-mone/Local-Network-Device-Scanner-Python-TCP-IP-.git
@@ -50,7 +50,7 @@ cd Local-Network-Device-Scanner-Python-TCP-IP-
 
 ---
 
-### 2️⃣ Edit IP Range (Optional)
+###  Edit IP Range (Optional)
 
 In `run.py` or `dashboard/app.py`:
 
@@ -62,7 +62,7 @@ END = 10
 
 ---
 
-### 3️⃣ Run the CLI Scanner
+###  Run the CLI Scanner
 
 ```bash
 python run.py
@@ -80,7 +80,7 @@ Scanning 192.168.1.1 to 192.168.1.10 on port 80...
 
 ---
 
-### 4️⃣ Run the Flask Dashboard
+###  Run the Flask Dashboard
 
 ```bash
 python dashboard/app.py
@@ -97,7 +97,7 @@ The dashboard shows:
 
 ---
 
-### 5️⃣ Run Unit Tests
+###  Run Unit Tests
 
 ```bash
 python test_scanner.py
@@ -105,28 +105,28 @@ python test_scanner.py
 
 ---
 
-## 💡 Concepts Demonstrated
+##  Concepts Demonstrated
 
-* ✅ Python Sockets & TCP/IP fundamentals
-* ✅ Object-Oriented Programming (OOP)
-* ✅ Flask app integration
-* ✅ Frontend dashboard (HTML + CSS + JS)
-* ✅ Auto-refreshing status
-* ✅ Modular structure & clean code
-* ✅ Unit testing best practices
-
----
-
-## 📸 Preview
-
-> *(You can add a screenshot or GIF of your dashboard here)*
+*  Python Sockets & TCP/IP fundamentals
+*  Object-Oriented Programming (OOP)
+*  Flask app integration
+*  Frontend dashboard (HTML + CSS + JS)
+*  Auto-refreshing status
+*  Modular structure & clean code
+*  Unit testing best practices
 
 ---
 
-## 👨‍💻 Author
+##  Preview
+
+<img width="1919" height="959" alt="image" src="https://github.com/user-attachments/assets/30f7278b-51ef-4b2d-b64f-ab777e052e07" />
+
+---
+
+##  Author
 
 **Kartik Mone**
 *Python Developer | Networking Enthusiast*
 
-[🔗 LinkedIn](https://www.linkedin.com/in/kartik-mone) • [💻 GitHub](https://github.com/kartik-mone)
+[LinkedIn](https://www.linkedin.com/in/kartik-mone) • [GitHub](https://github.com/kartik-mone)
 
