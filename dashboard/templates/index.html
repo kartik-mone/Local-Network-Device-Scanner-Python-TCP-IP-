@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Network Scanner Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #222;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        button {
+            display: block;
+            margin: 0 auto 20px auto;
+            padding: 10px 24px;
+            font-size: 16px;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #222;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #333;
+            color: #f1f1f1;
+        }
+
+        .alive {
+            background-color: #e6f4e6;  /* Soft green */
+        }
+
+        .unreachable {
+            background-color: #fbeaea;  /* Soft red */
+        }
+
+        tr:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Local Network Scanner</h1>
+        <button onclick="runScan()">Scan Now</button>
+        <table id="resultTable">
+            <thead>
+                <tr>
+                    <th>IP Address</th>
+                    <th>Status</th>
+                    <th>Response Time (ms)</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script>
+        function runScan() {
+            fetch('/scan')
+            .then(res => res.json())
+            .then(data => {
+                const tbody = document.querySelector("#resultTable tbody");
+                tbody.innerHTML = "";
+                data.forEach(item => {
+                    const row = document.createElement("tr");
+                    row.className = item.status;
+                    row.innerHTML = `
+                        <td>${item.ip}</td>
+                        <td>${item.status}</td>
+                        <td>${item.response_time || '-'}</td>`;
+                    tbody.appendChild(row);
+                });
+            });
+        }
+
+        runScan();
+        setInterval(runScan, 10000);
+    </script>
+</body>
+</html>
