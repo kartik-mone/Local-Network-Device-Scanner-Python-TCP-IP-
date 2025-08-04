@@ -1,6 +1,3 @@
-Here’s a complete `README.md` file for your **Local Network Device Scanner** GitHub project — it's clean, professional, and highlights the JD-relevant skills like OOP, TCP/IP, testing, and practical Python development:
-
----
 
 ```markdown
 #  Local Network Device Scanner (Python TCP/IP)
