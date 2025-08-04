@@ -126,7 +126,7 @@ python test_scanner.py
 ##  Author
 
 **Kartik Mone**
-*Python Developer | Networking Enthusiast*
+*Python Developer*
 
 [LinkedIn](https://www.linkedin.com/in/kartik-mone) • [GitHub](https://github.com/kartik-mone)
 
