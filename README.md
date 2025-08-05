@@ -1,4 +1,4 @@
-````markdown
+
 #  Local Network Device Scanner (Python TCP/IP)
 
 A simple Python tool to scan a local IP range and identify devices that are alive by attempting TCP connections (default: port 80). Designed with OOP principles, socket programming, and unit testing support. Includes a Flask-based web dashboard for live monitoring.
